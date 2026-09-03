@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plants Avenue - Full Interactive Website</title>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS External -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <div class="logo-icon"><i class="fa-solid fa-seedling"></i></div>
+      <span>Plants Avenue</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#products" class="nav-link">Shop</a></li>
+        <li><a href="#grow" class="nav-link">About</a></li>
+        <li><a href="#care" class="nav-link">Blog</a></li>
+        <li><a href="#footer" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-icons">
+      <i class="fa-regular fa-heart" id="wishlist-btn"></i>
+      <i class="fa-solid fa-bag-shopping" id="cart-btn">
+        <span class="cart-badge" id="cart-count">0</span>
+      </i>
+      <i class="fa-regular fa-user" id="user-btn"></i>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Bring The Nature Close To You</h1>
+      <p>Enhance your space with our indoor and herb plants. Experience the calming effect of greenery, right at home.</p>
+      <a href="#products" class="btn-discover">
+        Discover Now 
+        <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+    </div>
+
+    <div class="hero-image-wrapper">
+      <div class="price-badge">
+        <span class="label">Price</span>
+        <span class="amount">$8</span>
+      </div>
+      <div class="arch-frame">
+        <img src="https://images.unsplash.com/photo-1545241047-6083a3684587?q=80&w=800&auto=format&fit=crop" alt="Rubber Plant in Pot">
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section class="features">
+    <div class="feature-item">
+      <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+      <div class="feature-text">
+        <h3>Free Delivery</h3>
+        <p>Free shipping around the world for all orders over $120</p>
+      </div>
+    </div>
+
+    <div class="feature-item">
+      <div class="feature-icon"><i class="fa-regular fa-credit-card"></i></div>
+      <div class="feature-text">
+        <h3>Safe Payment</h3>
+        <p>With our payment gateway, don't worry about your information</p>
+      </div>
+    </div>
+
+    <div class="feature-item">
+      <div class="feature-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+      <div class="feature-text">
+        <h3>Friendly Services</h3>
+        <p>You have 30-day return guarantee for every single order</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS SECTION -->
+  <section class="products-section" id="products">
+    <div class="promo-banners">
+      <div class="banner-card">
+        <div class="banner-info">
+          <span>Big Sale Products</span>
+          <h2>Indoor<br>Plants</h2>
+          <a href="#products" class="shop-now-btn">SHOP NOW</a>
+        </div>
+        <img class="banner-img" src="https://png.pngtree.com/png-vector/20230906/ourmid/pngtree-succulent-plant-in-pot-png-image_9984210.png" alt="Indoor Plants">
+      </div>
+
+      <div class="banner-card">
+        <div class="banner-info">
+          <span>Top Products</span>
+          <h2>Herbal<br>Plants</h2>
+          <a href="#products" class="shop-now-btn">SHOP NOW</a>
+        </div>
+        <img class="banner-img" src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-mint-plant-in-pot-png-image_10255866.png" alt="Herbal Plants">
+      </div>
+    </div>
+
+    <div class="catalog-title">
+      <h2>Our Products</h2>
+    </div>
+
+    <!-- FILTER TABS -->
+    <div class="filter-tabs">
+      <button class="tab-btn active" data-filter="new">WHAT'S NEW</button>
+      <button class="tab-btn" data-filter="best">BEST SELLERS</button>
+      <button class="tab-btn" data-filter="favorites">CUSTOMER FAVORITES</button>
+    </div>
+
+    <!-- PRODUCTS GRID -->
+    <div class="products-grid" id="products-grid">
+      <!-- Content populated dynamically via JS -->
+    </div>
+  </section>
+
+  <!-- GROW PLANT BANNER SECTION -->
+  <section class="grow-banner" id="grow">
+    <div class="grow-title">
+      <h2>Grow Plant For<br>A Better Life</h2>
+    </div>
+
+    <div class="grow-images">
+      <div class="circle-img-sm">
+        <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=400&auto=format&fit=crop" alt="Small Plant">
+      </div>
+      <div class="circle-img-lg">
+        <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?q=80&w=500&auto=format&fit=crop" alt="Potted Plant">
+      </div>
+    </div>
+
+    <div class="grow-text">
+      <p>Cultivating plants enhances well-being and contributes to a healthier environment, fostering a more fulfilling life.</p>
+      <a href="#care" class="btn-discover">
+        Read More
+        <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- CARE STEPS SECTION -->
+  <section class="care-section" id="care">
+    <div class="care-header">
+      <h2>Steps to start taking care of your plants</h2>
+      <p>The right solution for the care of green and smart plants</p>
+    </div>
+
+    <div class="care-grid">
+      <div class="care-item">
+        <div class="care-icon"><i class="fa-solid fa-droplet"></i></div>
+        <h3>Humidity Control</h3>
+        <p>Effective humidity control is essential for properly caring for plants, ensuring optimal growth and overall health.</p>
+      </div>
+
+      <div class="care-item">
+        <div class="care-icon"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+        <h3>Pest Anticipation</h3>
+        <p>Implementing proactive pest anticipation measures is essential to safeguard and nurture the well-being of plants.</p>
+      </div>
+
+      <div class="care-item">
+        <div class="care-icon"><i class="fa-solid fa-scissors"></i></div>
+        <h3>Pruning Weeds</h3>
+        <p>Taking care of plants involves diligently managing unwanted growth to ensure their well-being.</p>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="article-img">
+        <img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=800&auto=format&fit=crop" alt="Monstera Leaves">
+      </div>
+      <div class="article-content">
+        <h3>Come with us how to grow your plants to be better and healthier</h3>
+        <p>Join us on a journey to learn the art of growing healthier and more vibrant plants. We're here to share tips and insights that will help you nurture your garden to its fullest potential. Come along with us, and let's explore the simple yet effective ways to make your plants thrive, naturally.</p>
+        <a href="#" class="btn-discover">
+          Read More
+          <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM FEED SECTION -->
+  <section class="instagram-section">
+    <h2>Follow us on Instagram</h2>
+    <div class="insta-grid">
+      <div class="insta-card">
+        <img src="https://images.unsplash.com/photo-1592150621744-aca64f48394a?q=80&w=500&auto=format&fit=crop" alt="Instagram Post 1">
+      </div>
+      <div class="insta-card">
+        <img src="https://images.unsplash.com/photo-1617173944883-6ffbd35d584d?q=80&w=500&auto=format&fit=crop" alt="Instagram Post 2">
+      </div>
+      <div class="insta-card">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=500&auto=format&fit=crop" alt="Instagram Post 3">
+      </div>
+      <div class="insta-card">
+        <img src="https://images.unsplash.com/photo-1530968464165-7a1861cbaf9f?q=80&w=500&auto=format&fit=crop" alt="Instagram Post 4">
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer id="footer">
+    <div class="newsletter-box">
+      <h2>Stay In The Loop With Special Offers,<br>Plant Care Tips, & More.</h2>
+      <form class="subscribe-form" id="newsletter-form">
+        <input type="email" id="newsletter-email" placeholder="Email" required>
+        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-main">
+      <div class="footer-col footer-address">
+        <p>123 Hello Street, CA<br>8034, LA</p>
+        <p>+63976852918<br>plants.ave@gmail.com</p>
+      </div>
+
+      <div class="footer-col footer-center">
+        <h3>Plants Avenue</h3>
+        <p>Caring for plants enhances your space with life. Whether it's a small herb garden or thriving jungle, nurturing your plants rewards you with greenery and serenity.</p>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col footer-nav">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#products">Shop</a></li>
+          <li><a href="#grow">About</a></li>
+          <li><a href="#care">Blog</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      &copy; 2023 PLANTS AVENUE | ALL RIGHTS RESERVED<br>
+      DESIGN BY LA
+    </div>
+  </footer>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast" id="toast">Produk berhasil ditambahkan ke keranjang!</div>
+
+  <!-- JavaScript External -->
+  <script src="script.js"></script>
+</body>
+</html>
