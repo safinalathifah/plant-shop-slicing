@@ -1,8 +1,6 @@
-# 🌿 Plant Shop E-Commerce - UI Slicing
+# Plant Shop E-Commerce - UI Slicing
 
 Hasil *slicing* UI Design dari Behance menjadi tampilan web interaktif dan responsif menggunakan HTML, CSS, dan Vanilla JavaScript.
-
-![Preview Plant Shop](https://via.placeholder.com/800x400.png?text=Preview+Screenshot+Proyek+Kamu)
 
 ## 🔗 Quick Links
 - **Live Demo:** [Lihat Website Interaktif]([https://username.github.io/plant-shop-slicing/](https://safinalathifah.github.io/plant-shop-slicing/)
