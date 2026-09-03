@@ -3,7 +3,7 @@
 Hasil *slicing* UI Design dari Behance menjadi tampilan web interaktif dan responsif menggunakan HTML, CSS, dan Vanilla JavaScript.
 
 ## Quick Links
-- **Live Demo:** [Lihat Website Interaktif]([https://username.github.io/plant-shop-slicing/](https://safinalathifah.github.io/plant-shop-slicing/)
+- **Live Demo:** [Lihat Website Interaktif](https://safinalathifah.github.io/plant-shop-slicing/)
 - **Original UI Design:** [Plant Shop E-commerce di Behance](https://www.behance.net/gallery/206204229/Plant-Shop-E-commerce-Website-Design)
 
 ## Tech Stack
